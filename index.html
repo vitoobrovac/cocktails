@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prvo.css">
+</head>
+<body>
+    <div id="uvod">
+        <p> Kokteli </p>
+    </div>
+    <div id="linkovi">
+        <a href="index.html" class="linkovi">Kokteli</a>
+        <a href="" class="linkovi">Žestice</a>
+        <a href="" class="linkovi">Kave</a>
+        <a href="pive.html" class="linkovi">Pive</a>
+        <a href="" class="linkovi">sokovi</a>
+    </div>
+    <button class="do" style="display: block;" onclick="dokosarice()" id="doKosarice">Košarica</button>
+    <button class="do" style="display: none;" onclick="dokoktela()" id="doKoktela">Kokteli</button>
+    <h1 class="svi">Svi kokteli</h1>
+    <div id="grid">
+        <div class="koktel">
+            <div>
+                <div onclick="info('mojito','mojitoInf')"  class="fan" id="mojitoInf" style="display: none;"><h3>Zanimljivost</h3><p> Osim što je popularan kao ljetni koktel, mojito se tradicionalno koristio kao lijek protiv bolesti poput dispepsije i kolere.</p></div>
+                <img style="display: block;" id="mojito" onclick="info('mojito','mojitoInf')" src="Mojito.jpg" alt="">
+            </div>
+            <h3>Mojito</h3>
+            <li class="sastojci">3 čajne žličice šećera</li>
+            <li class="sastojci">1 svježa limeta</li>
+            <li class="sastojci">1 dl bijelog ruma</li>
+            <li class="sastojci">2 dl tonika</li>
+            <li class="sastojci">menta</li>
+            <li class="sastojci">drobljeni led</li>
+            <button onclick="narudžba('Mojito')" id="mojitog" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('sex','sexinfo')"  class="fan" id="sexinfo" style="display: none;"><h3>Zanimljivost</h3><p>Ima nekoliko varijacija, a jedna od najpoznatijih tvrdi da je stvoren u Floridi 1987. godine.</p></div>
+                <img style="display: block;" id="sex" onclick="info('sex','sexinfo')" src="sex..avif" alt="">
+            </div>
+            <h3>Sex on the beach</h3>
+            <li class="sastojci">vodtka</li>
+            <li class="sastojci">likera od breskve</li>
+            <li class="sastojci">sok naranče</li>
+            <li class="sastojci">sok od brusnice</li>
+            <li class="sastojci">led</li>
+            <button onclick="narudžba('Sex on the beach')" id="sexg" class="gumb">Dodaj u narudžbu</button>
+     
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('tek','tekinf')"  class="fan" id="tekinf" style="display: none;"><h3>Zanimljivost</h3><p>Koktel je dobio popularnost 1970-ih, kada je postao simbol opuštenog stila života tog vremena.</p></div>
+                <img style="display: block;" id="tek" onclick="info('tek','tekinf')" src="tek.jpg" alt="">
+            </div>
+            <h3>Tequila sunrise</h3>
+            <li class="sastojci">silver tequila</li>
+            <li class="sastojci">grenadin sirup</li>
+            <li class="sastojci">orange juice
+            </li>
+            <li class="sastojci">kocke leda
+            </li>
+            <button onclick="narudžba('Tequila sunrise')" id="tekg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('mar','marinf')"  class="fan" id="marinf" style="display: none;"><h3>Zanimljivost</h3><p> Postoje različite legende o tome kako je Margarita dobila ime, ali jedna od najpopularnijih tvrdi da je nazvana po ženi koja ju je prvi put naručila.</p></div>
+                <img style="display: block;" id="mar" onclick="info('mar','marinf')" src="Margarita-6-1.webp" alt="">
+            </div>
+            <h3>Margarita</h3>
+            <li class="sastojci">bijela tekile</li>
+            <li class="sastojci">2 cl triple sec(liker)</li>
+            <li class="sastojci">4 cl soka od limete</li>
+            <li class="sastojci">sol</li>
+            <li class="sastojci">led</li>
+            <button onclick="narudžba('Margarita')" id="marg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('pin','pininf')"  class="fan" id="pininf" style="display: none;"><h3>Zanimljivost</h3><p>Nastao je u 19. stoljeću, a njegov recept službeno je priznat kao nacionalno piće Portorika 1978. godine.</p></div>
+                <img style="display: block;" id="pin" onclick="info('pin','pininf')" src="Pina_Colada_Mocktail_03.webp" alt="">
+            </div>
+            <h3>Pina Colada</h3>
+            <li class="sastojci">2cl bijelog ruma</li>
+            <li class="sastojci">2cl kokos likera</li>
+            <li class="sastojci">1,5dcl soka od ananasa</li>
+            <li class="sastojci">1cl slatkog vrhnja</li>
+            <li class="sastojci">mrvljeni led</li>
+            <button onclick="narudžba('Pina Colada')" id="pinag" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('mai','maiinf')"  class="fan" id="maiinf" style="display: none;"><h3>Zanimljivost</h3><p> Legenda kaže da je Victor J. Bergeron, poznat kao Trader Vic, stvorio ovaj koktel 1944. godine u svojem baru u Oaklandu.</p></div>
+                <img style="display: block;" id="mai" onclick="info('mai','maiinf')" src="mai-tai-drink.jpeg" alt="">
+            </div>
+            <h3>Mai tai</h3>
+            <li class="sastojci">bijeli rum</li>
+            <li class="sastojci">tamni rum</li>
+            <li class="sastojci">liker naranče</li>
+            <li class="sastojci">sok od limete</li>
+            <li class="sastojci">menta, led</li>
+            <button onclick="narudžba('Mai Tai')" id="maig" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('sing','singinf')"  class="fan" id="singinf" style="display: none;"><h3>Zanimljivost</h3><p>Kreiran je u hotelu Raffles u Singapuru krajem 19. stoljeća, a recept je doživio mnoge varijacije tijekom godina.</p></div>
+                <img style="display: block;" id="sing" onclick="info('sing','singinf')" src="A-singapore-sling-Feature_1.jpg" alt="">
+            </div>
+            <h3>Singapore Sling</h3>
+            <li class="sastojci">gin</li>
+            <li class="sastojci">brandy od višnje</li>
+            <li class="sastojci">grenadina</li>
+            <li class="sastojci">sok od ananasa</li>
+            <li class="sastojci">sok od limete</li>
+            <li class="sastojci">kriška ananasa/naranče</li>
+            <li class="sastojci">višnja</li>
+            <button onclick="narudžba('Singapore Sling')" id="singg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('zomb','zombinf')"  class="fan" id="zombinf" style="display: none;"><h3>Zanimljivost</h3><p>Stvoren je u baru "Don the Beachcomber" u Los Angelesu 1934. godine, a smatra se jednim od prvih "tiki" koktela.</p></div>
+                <img style="display: block;" id="zomb" onclick="info('zomb','zombinf')" src="Zombie-Cocktail-1.jpg" alt="">
+            </div>
+            <h3>Zombie</h3>
+            <li class="sastojci">1.25 cl soka od limete</li>
+            <li class="sastojci">1.25 cl soka od ananasa</li>
+            <li class="sastojci">1.25 cl bijeli rum</li>
+            <li class="sastojci">1.25 cl tamni rum</li>
+            <li class="sastojci">1.25 cl soka od papaje</li>
+            <button onclick="narudžba('Zombie')" id="zomg" class="gumb">Dodaj u narudžbu</button>
+        
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('cai','caiinf')"  class="fan" id="caiinf" style="display: none;"><h3>Zanimljivost</h3><p> Originalno je korišten kao lijek protiv gripe, a popularnost mu je porasla tijekom 20. stoljeća zahvaljujući proširenju brazilskih izvoza.</p></div>
+                <img style="display: block;" id="cai" onclick="info('cai','caiinf')" src="preuzmi (1).jpg" alt="">
+            </div>
+            <h3>Caipirinha</h3>
+            <li class="sastojci">2 limete</li>
+            <li class="sastojci">vodka</li>
+            <li class="sastojci">secer</li>
+            <li class="sastojci">led</li>
+            <li class="sastojci">limeta i secer za ukras</li>
+            <button onclick="narudžba('Caipirinha')" id="capg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('dai','daiinf')"  class="fan" id="daiinf" style="display: none;"><h3>Zanimljivost</h3><p>Prvotno se smatralo da su američki rudari bili prvi koji su konzumirali Daiquiri u 19. stoljeću, miješajući rum s limunovim sokom radi prevencije skorbuta.</p></div>
+                <img style="display: block;" id="dai" onclick="info('dai','daiinf')" src="hand-squeezing-lime-daiquiri-cocktail-683x1024.webp" alt="">
+            </div>
+            <h3>Daiquiri</h3>
+            <li class="sastojci">0,5 dl bijeli rum</li>
+            <li class="sastojci">šećerni sirup, 0,2 dl</li>
+            <li class="sastojci">sok od limete, 0,2 dl</li>
+            <li class="sastojci">led kockice</li>
+            <button onclick="narudžba('Daiquiri')" id="daig" class="gumb">Dodaj u narudžbu</button>
+            
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('blu','bluinf')"  class="fan" id="bluinf" style="display: none;"><h3>Zanimljivost</h3><p>Inspiriran bojama tropskog neba i mora, Blue Hawaiian postao je simbol Kariba.</p></div>
+                <img style="display: block;" id="blu" onclick="info('blu','bluinf')" src="Frozen-Blue-Hawaiian-3.jpg" alt="">
+            </div>
+            <h3>Blue Hawaiian</h3>
+            <li class="sastojci">80 ml likera Blue Curacao</li>
+            <li class="sastojci">80 ml Malibu ruma</li>
+            <li class="sastojci">40 ml kokosovog mlijeka
+            </li>
+            <li class="sastojci">200 ml soka od ananasa
+            </li>
+            <li class="sastojci">izmrvljeni led</li>
+            <button onclick="narudžba('Blue Hawaiian')" id="hawg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('saz','sazinf')"  class="fan" id="sazinf" style="display: none;"><h3>Zanimljivost</h3><p>Smatra se najstarijim koktelom u Americi, datira iz 19. stoljeća, a postao je popularan u New Orleansu.</p></div>
+                <img style="display: block;" id="saz" onclick="info('saz','sazinf')" src="sazerac-cocktail-1.jpg" alt="">
+            </div>
+            <h3>Sazerac</h3>
+            <li class="sastojci">6 cl whiskeya</li>
+            <li class="sastojci">žličica šećera</li>
+            <li class="sastojci">led</li>
+            <li class="sastojci">par kapi absintha</li>
+            <li class="sastojci">limun za ukras</li>
+            <button onclick="narudžba('Sazerac')" id="sazg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('dar','darinf')"  class="fan" id="darinf" style="display: none;"><h3>Zanimljivost</h3><p> Popularnost mu je porasla nakon što je časopis Esquire 1979. godine proglasio bar "Soggy Dollar" na otoku Jost Van Dyke kao mjesto gdje se prvi put posluživao ovaj koktel.</p></div>
+                <img style="display: block;" id="dar" onclick="info('dar','darinf')" src="painkiller-scream-canister-2.jpg" alt="">
+            </div>
+            <h3>painkiller</h3>
+            <li class="sastojci">60 ml (2 oz) tamnog ruma</li>
+            <li class="sastojci">120 ml (4 oz) soka od ananasa</li>
+            <li class="sastojci">60 ml (2 oz) soka od naranče</li>
+            <li class="sastojci">60 ml (2 oz) kokosovog<br/>  vrhnja ili kokosovog mlijeka</li>
+            <li class="sastojci">Kriška limna, ananasa i <br/> višnja, za ukras</li>
+            <li class="sastojci">led</li>
+            <button onclick="narudžba('Painkiller')" id="paig" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('bah','bahinf')"  class="fan" id="bahinf" style="display: none;"><h3>Zanimljivost</h3><p> Stvoren je kao simbol karipskog stila života, a popularnost mu je porasla 1950-ih i 1960-ih godina.</p></div>
+                <img style="display: block;" id="bah" onclick="info('bah','bahinf')" src="bahamam-mama-1-of-1-2-e1557348692374.jpg" alt="">
+            </div>
+            <h3>Bahamam mama</h3>
+            <li class="sastojci">15 ml likera od kokosa</li>
+            <li class="sastojci">7 ml ruma</li>
+            <li class="sastojci">sok iz 1/2 limuna</li>
+            <li class="sastojci">120 ml soka od ananasa</li>
+            <li class="sastojci">jagoda ili trešnja za ukras</li>
+            <button onclick="narudžba('Bahama mama')" id="bahg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('jun','juninf')"  class="fan" id="juninf" style="display: none;"><h3>Zanimljivost</h3><p>Originalno je kreiran u hotelu "Hilton" u Kuala Lumpuru 1978. godine, a dobiva ime po egzotičnom pticama koje su obilne u Maleziji.</p></div>
+                <img style="display: block;" id="jun" onclick="info('jun','juninf')" src="jungle bird druga slika.jpg" alt="">
+            </div>
+            <h3>Jungle Bird</h3>
+            <li class="sastojci"> 40 ml tamnog ruma</li>
+            <li class="sastojci">20 ml Campari Bitter</li>
+            <li class="sastojci"> 40 ml soka od ananasa</li>
+            <li class="sastojci">15 ml svježeg soka od limete</li>
+            <li class="sastojci">šećer</li>
+            <li class="sastojci">led</li>
+            <button onclick="narudžba('Jungle Bird')" id="jung" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('a','b')"  class="fan" id="b" style="display: none;"><h3>Zanimljivost</h3><p>Stvoren je u "Pat O'Brien's" baru u New Orleansu tijekom nestašice viskija u 1940-ima, kada su se izumili kokteli s rumom.</p></div>
+                <img style="display: block;" id="a" onclick="info('a','b')" src="Hurricane-1.jpg" alt="">
+            </div>
+            <h3>Hurricane</h3>
+            <li class="sastojci">25 ml tamnog ruma</li>
+            <li class="sastojci">25 ml bijelog ruma</li>
+            <li class="sastojci">25 ml soka limete</li>
+            <li class="sastojci">50 ml soka od ananasa</li>
+            <li class="sastojci">50 ml soka od naranče</li>
+            <li class="sastojci">šećer</li>
+            <button onclick="narudžba('Hurricane')" id="hurrg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+        <div class="koktel">
+            <div>
+                <div onclick="info('lag','laginf')"  class="fan" id="laginf" style="display: none;"><h3>Zanimljivost</h3><p>Dobio je popularnost tijekom 1980-ih zahvaljujući filmu s istim imenom, što je pridonijelo njegovoj popularnosti kao koktela za zabave.</p></div>
+                <img style="display: block;" id="lag" onclick="info('lag','laginf')" src="images (1).jpg" alt="">
+            </div>
+            <h3>Blue Lagoon</h3>
+            <li class="sastojci">4 cl vodka</li>
+            <li class="sastojci">3 cl blue curacao</li>
+            <li class="sastojci">1.5 cl soka od limuna</li>
+            <li class="sastojci">10 cl sprite</li>
+            <li class="sastojci">led</li>
+            <button onclick="narudžba('Blue Lagoon')" id="lagg" class="gumb">Dodaj u narudžbu</button>
+        </div>
+    </div>
+    <div  style="background-color: white; display: none;" id="kosarica">
+
+    </div>
+    <button id="kraj">lalal</button>
+    <input id="sakriven" style="display: none;" type="number">
+    <script src="drugo.js"></script>
+    <script src="lala.js" type="module"></script>
+ 
+</body>
+</html>
